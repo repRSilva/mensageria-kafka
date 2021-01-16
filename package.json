@@ -1,0 +1,21 @@
+{
+  "name": "service-mensageria-kafka",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts":{
+    "start-consumer":"node src/consumer/index.js",
+    "start-producer":"node src/producer/index.js"
+  },
+  "dependencies": {
+    "kafkajs": "^1.15.0"
+  },
+  "devDependencies":  {
+    "eslint": "^7.16.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1"
+  }
+}
