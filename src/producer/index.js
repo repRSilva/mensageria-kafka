@@ -16,13 +16,15 @@ async function start () {
       }
     }
 
-    await producer.send({
-      topic: 'send-message',
-      compression: CompressionTypes.GZIP,
-      messages: [
-        { value: JSON.stringify(message) }
-      ]
-    })
+    setTimeout(async () => {
+      await producer.send({
+        topic: 'send-message',
+        compression: CompressionTypes.GZIP,
+        messages: [
+          { value: JSON.stringify(message) }
+        ]
+      })
+    }, 1000)
 
     iterator++
   }

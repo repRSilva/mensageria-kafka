@@ -15,13 +15,13 @@ async function start () {
       console.log('RESPONSE CONSUMER PARTITION: ', partition)
       console.log('RESPONSE CONSUMER MESSAGE: ', String(message.value))
 
-      const payload = JSON.parse(message.value)
+      const payload = await JSON.parse(message.value)
 
       await producer.send({
         topic: 'response-message',
         compression: CompressionTypes.GZIP,
         messages: [
-          { value: JSON.stringify(`Usuário ${payload} criado com sucesso!`) }
+          { value: JSON.stringify(`Usuário ${payload.user.name} criado com sucesso!`) }
         ]
       })
     }
