@@ -1,8 +1,8 @@
-📃 Sobre
-Este repositório contém um exemplo de mensageria utilizando kafka e nodeJS
+📃 **Sobre**
+- Este repositório contém um exemplo de mensageria utilizando kafka e nodeJS
 
-🔨 Tecnologias
-Este projeto foi desenvolvido com as seguintes tecnologias:
+🔨 **Tecnologias**
+- Este projeto foi desenvolvido com as seguintes tecnologias:
 
 - [Docker](https://www.docker.com/)
 - [Kafka](http://kafka.apache.org/)
